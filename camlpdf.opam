@@ -1,0 +1,22 @@
+opam-version: "2.0"
+name: "camlpdf"
+version: "2.3.1+satysfi"
+synopsis: "TBD"
+maintainer: "Yoshimura Yuu <yyu@mental.poker>"
+authors: "Yoshimura Yuu <yyu@mental.poker>"
+license: "LGPL"
+homepage: "https://github.com/y-yu/camlpdf"
+bug-reports: "https://github.com/y-yu/camlpdf/issues"
+depends: [
+  "ocaml"
+  "ocamlfind"
+]
+build: [
+  [make]
+]
+install: [make "install"]
+dev-repo: "git+https://github.com/y-yu/camalpdf"
+url: {
+  src: "https://github.com/y-yu/camlpdf/archive/v2.3.1+satysfi.tar.gz"
+  checksum: "6fccfb1ca8ed5381fc4e9395a6029f24"
+}

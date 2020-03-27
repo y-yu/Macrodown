@@ -13,6 +13,7 @@ install:
   - eval `opam config env`
   - opam repository add satysfi-external https://github.com/gfngfn/satysfi-external-repo.git
   - opam update
+  - opam pin add camlpdf.2.3.1+satysfi .
   - opam pin add -y --no-action satysfi .
   - opam install -y --deps-only satysfi
 script:
