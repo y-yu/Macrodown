@@ -12,6 +12,7 @@ install:
   - bash -ex .travis-ocaml.sh
   - eval `opam config env`
   - opam repository add satysfi-external https://github.com/gfngfn/satysfi-external-repo.git
+  - opam repository add camlpdf-yyu ./camlpdf
   - opam update
   - opam pin add -y --no-action satysfi .
   - opam install -y --deps-only satysfi
